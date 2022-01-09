@@ -1,0 +1,99 @@
+header > h1 {color:#412678;}
+
+main {color:#412678;}
+
+/* Main part with Claudia picture and brief biography text*/
+article{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:flex-start;
+	margin-bottom:120px;
+	gap:5px;
+}
+
+article > h2{
+	flex-basis:100%;
+	text-align:center;
+	font-size:37px;
+	text-decoration: overline;
+}
+
+picture > img {
+	flex-basis:50%;
+	max-width:100%;
+	height:auto;
+}
+
+/*Claudia brief biography Section*/
+#bio{
+	flex-basis:50%;
+	background-color:rgba(247,206,137, 0.4);
+	width:100%;
+	height:auto;
+	padding:25px;
+}
+
+/* Section small gallery*/
+#smallgallery{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	align-items:baseline;
+	list-style-type:none;
+	background-color:rgba(65,38,120,0.3);
+	margin:0;
+	padding:12px;
+	margin-bottom:80px;
+}
+
+li img {
+  flex:25%;
+  width:100%;
+  height:auto;
+}
+
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) {
+	article, #smallgallery {
+		flex-direction:row;
+	}
+	
+    picture > img, li >img, #bio{
+    flex: 25%;
+    max-width: 100%;
+  }
+}
+
+/*Medium screen - i.e.tablets*/
+@media screen and (max-width: 768px) {
+  article, #smallgallery {
+    flex-direction:column;
+	justify-content:center;
+	align-items:center;
+  }
+	
+  picture > img, li >img {
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  section > h2{
+	font-size:20px;
+  }
+  
+
+/*Small screen*/
+@media screen and (max-width: 600px) {
+  article, #smallgallery {
+    flex-direction:column;
+    justify-content:center;
+	align-items:center;
+  }
+	
+  picture > img, #bio, li img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
