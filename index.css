@@ -1,0 +1,80 @@
+/*Header Introduction to the main content*/
+header > h1, h2{
+	text-align:center;
+	margin-bottom:50px;
+	color:#070246;
+ }
+
+/* Main part with pictures and quotes*/
+main{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+    align-items:center;
+	margin-bottom:80px;
+	color:#070246;
+}
+
+picture{
+	flex:50%;	
+	margin-bottom:20px;
+}
+
+picture > img{
+	max-height:100%;
+    max-width:100%;
+    object-fit:contain;
+	object-position:50% 50%;
+}
+
+.quote{flex:50%;}
+
+.ref{font-size:15px;}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px){
+	main{
+		flex-direction:row;
+	}
+
+	picture, .quote{
+	flex: 50%;
+	}
+	
+  .ref{
+	font-size:15px; 
+  }
+}
+  
+
+
+/*Medium screen - i.e.tablets*/
+@media screen and (max-width: 768px){
+	main{
+		flex-direction:row;
+	}
+
+	picture, .quote{
+	flex: 50%;
+	}
+	
+  .ref{
+	font-size:14px; 
+  }
+}
+  
+   
+/*Small screen*/
+@media screen and (max-width: 600px) {
+	main{
+		flex-direction:column;
+	}
+	
+    picture, .quote{
+	flex: 100%;
+    }
+    
+  .ref{
+	font-size:12px; 
+  }
+}
