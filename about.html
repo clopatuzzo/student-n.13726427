@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Claudia webportfolio">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Claudia Patuzzo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About_Claudia_Patuzzo</title>
+  <link rel="stylesheet" href="myglobalpage.css">
+  <link rel="stylesheet" href="about.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header> <!--Title of the portfolio for all pages-->
+  <h1 id="title">CLAUDIA <span style= "font-size:2em;">P</span>ATUZZO</h1>
+</header>
+
+<nav> <!-- Navigation bar-->
+  <ul id="navbar">
+      <li><a href="index.html" id="home">HOME</a></li>
+	  <li ><a href="gallery.html" id="gallery">GALLERY</a></li>
+	  <li><a href="about.html" id="about">ABOUT ME</a></li>
+      <li><a href="contact.html" id="contact">CONTACTS</a></li>
+  </ul>
+</nav>
+
+<header> <!--Header of the page introducing the content of the page-->
+    <h1>Hello, I am</h1>
+</header>
+
+<main> <!-- Main part with Claudia picture, brief biography and a little gallery of images-->
+  <article> <!-- Biography and a picture-->
+    <h2>Claudia Patuzzo</h2>
+    <picture>
+	  <source media="(min-width: 650px)" srcset="img\about_me\me_large.jpg">
+	  <source media="(min-width: 465px)" srcset="img\about_me\me_medium.jpg">
+      <img src="img/about_me/me_small.jpg" alt="Claudia Patuzzo picture" title="Claudia Patuzzo">
+    </picture>
+    <section id="bio">
+      <h2>A little bit more about me..</h2>
+      <p>Hey, it's Claudia Patuzzo here!<br> I am originally from Italy but now living in London. <br>One of my passion? Colours!<br>
+		 It all started when I had to decide the topic for my final dissertation for my Master degree in architecture at the Polytechnic of Milan University. After that, I attended different seminars and courses about colour science and specific colour charts.<br>
+		 My work experiences in different fields allowed me to learn how to communicate and interact with people and, most importantly, how I enjoy helping and collaborating with them.</p>
+    </section>
+  </article>
+  
+  <section> <!-- A little gallery of drawings and pictures of stil life-->
+    <h3>Here some things I love to do in my free time!</h3>
+    <ul id="smallgallery">
+	  <li>
+	    <img src="img\about_me\roses.jpg" alt="Roses stil life" title="Roses stil life">
+	  </li>
+	  <li>
+	    <img src="img\about_me\wall.jpg" alt="Standing wall with color samples" title="Standing wall">
+	  </li>
+	  <li>
+	    <img src="img\about_me\drawing.jpg" alt="Drawing of a woman on a beach" title="Drawing of a woman">  
+      </li>
+	  <li>
+	    <img src="img\about_me\tattoo.jpg" alt="Roses Moon and Cat tattoo sketch" title="Roses Moon and Cat tattoo sketch">  
+      </li>	  
+    </ul>
+  </section>
+</main>
+
+<footer> <!-- Footer Social media iconcs and copywrite text-->
+  <a href="https://www.linkedin.com/in/claudia-patuzzo/" class="fa fa-linkedin"  target="_blank"></a>
+  <a href= "https://www.instagram.com/clo_patuzzo/" class="fa fa-instagram" target="_blank"></a>
+  <p id="copywrite">Copyright<span>&#169;</span> 2022</p>
+</footer>
+
+</body>
+</html>
