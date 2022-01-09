@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Claudia webportfolio">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Claudia Patuzzo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="myglobalpage.css">
+   <link rel="stylesheet" href="index.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header> <!--Title of the portfolio for all pages-->
+  <h1 id="title">CLAUDIA <span style= "font-size:2em;">P</span>ATUZZO</h1>
+</header>
+
+<nav> <!-- Navigation bar-->
+  <ul id="navbar">
+      <li><a href="index.html" id="home">HOME</a></li>
+	  <li ><a href="gallery.html" id="gallery">GALLERY</a></li>
+	  <li><a href="about.html" id="about">ABOUT ME</a></li>
+      <li><a href="contact.html" id="contact">CONTACTS</a></li>
+  </ul>
+</nav>
+
+<header> <!--Header introducing the page and the content of the whole document-->
+  <h1>Welcome everyone!</h1>
+  <h2><span style="font-size:2em">C</span>olours. <span style="font-size:2em">G</span>eometries.<span style="font-size:2em"> E</span>motions.<br><span style="font-size:2em">V</span>ibrations.</h2>
+</header>
+
+<main> <!--Main part with pictures and quotes about colors-->	
+  <p class="quote">“Colour is a power which directly<br>influences the soul.”<br><span class="ref"> Wassily Kandinsky, Concerning the Spiritual in Art.</span></p>
+  <picture>
+    <source media="(min-width: 650px)" srcset="img\index\chair_large.jpg">
+    <source media="(min-width: 465px)" srcset="img\index\chair_medium.jpg">
+	<img src="img\index\chair_small.jpg" alt="chair with objects" title="Chair and objects">
+  </picture>
+  <picture>
+	<source media="(min-width: 650px)" srcset="img\index\palette_large.jpg">
+    <source media="(min-width: 465px)" srcset="img\index\palette_medium.jpg">
+	<img src="img\index\palette_small.jpg" alt="Color palette with cards" title="Color palette">
+  </picture>
+  <p class="quote">“The purest and most thoughtful minds<br>are those which love colour the most.”<br><span class="ref"> John Ruskin. The Stone of Venice (1851-3)</span></p>
+</main>
+
+<footer> <!-- Footer Social media iconcs and copywrite text-->
+  <a href="https://www.linkedin.com/in/claudia-patuzzo/" class="fa fa-linkedin"  target="_blank"></a>
+  <a href= "https://www.instagram.com/clo_patuzzo/" class="fa fa-instagram" target="_blank"></a>
+  <p id="copywrite">Copyright<span>&#169;</span> 2022</p>
+</footer>
+
+</body>
+</html>
