@@ -1,0 +1,111 @@
+header > h1,h2{color:#5f0303;}
+
+h2{text-align:center;}
+
+/*Main area with coloured background and info info area*/
+main{
+	background-color:rgba(42,118,8, 0.2);
+	width:800px;
+	height:800px;
+	margin-bottom:80px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*Contant info Area*/
+section{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background: url("img/info/penpaper.jpg")  no-repeat;
+	background-size: 70%;
+	background-position:center;
+	width:100%;
+	height:100%;
+}
+
+section > h3{text-align:center;}
+
+#info{
+	list-style-type:none;
+}
+
+li label {
+	font-size:18px;
+}
+
+#fname, #lname, #email, #message{
+	border-style:outset;
+	width:300px;
+	border-radius:2px;
+	margin-bottom:10px;
+}
+
+#message{height:100px;}
+
+/*Submit bottom*/
+#info > li > #submit{
+	border-style:outset;
+	border-radius:10px;
+    border-width:2px;
+	font-size:19px;
+	margin-left:auto;
+	cursor:pointer;
+}
+
+
+/*Medium screen - i.e.tablets*/
+@media screen and (max-width: 768px){
+  main{
+    width:600px;
+	height:600px;
+  }
+  
+  li label{
+	font-size:14px;
+  }
+
+  #fname, #lname, #email, #message{
+	width:200px;
+	margin-bottom:8px;
+  }
+
+  #message{
+    height:100px;
+  }
+
+  #info >li > #submit{
+	border-radius:6px;
+	font-size:15px;
+	margin-left:auto;
+  }
+}
+
+ 
+/*Small screen*/
+@media screen and (max-width: 600px){
+  main{
+    width:300px;
+	height:300px;
+  }
+  
+  li label{
+	font-size:9px;
+}
+
+#fname, #lname, #email, #message{
+	width:90px;
+	margin-bottom:5px;
+}
+
+#message{
+    height:30px;
+  }
+
+#info >li > #submit{
+	border-radius:4px;
+	font-size:10px;
+	margin-left:auto;
+  }
+}
