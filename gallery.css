@@ -1,0 +1,71 @@
+header > h1 {color:#0f6556;}
+
+main{
+	display:flex;
+	flex-wrap: wrap;	
+	flex-direction:row;
+	margin-bottom:80px;
+}
+
+.palette{ 
+  flex:25%;
+  max-width:25%;
+}
+
+.palette img{
+  padding:4px;
+  width:100%;
+  height:auto;
+}
+
+#palette1{
+	flex:100%;
+	max-width:100%;
+}
+
+#palette1 img{
+  padding:25px 0 0 0;
+  width:100%;
+  height:auto;
+}
+
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) {
+  .palette {
+    flex:25%;
+    max-width:25%;
+  }
+	
+  .palette1 {
+    flex:100%;
+    max-width:100%;
+  }
+}
+
+
+/*Medium screen - i.e.tablets*/
+@media screen and (max-width: 768px) {
+  .palette{
+    flex:50%;
+    max-width:50%;
+  }
+  
+  .palette1 {
+    flex:100%;
+    max-width:100%;
+  }
+}
+
+/*Small screen*/
+@media screen and (max-width: 600px) {
+  .palette {
+    flex:100%;
+    max-width:100%;
+  }
+  
+  .palette1 {
+    flex:100%;
+    max-width:100%;
+  }
+}
